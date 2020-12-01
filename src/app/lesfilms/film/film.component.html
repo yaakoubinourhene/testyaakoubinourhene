@@ -1,0 +1,7 @@
+<div>
+    <p [ngClass]="{'badge badge-pill badge-primary':fil.nouveau==true,'badge badge-danger':fil.nouveau==false}">Film {{fil.i}} {{fil.titre|UpperCase}}</p><br>
+    <img [src]="fil.affiche" width="70px" height="100px">
+    <input [checked]="nbfilm">Long Film<br>
+
+</div>
+<button type="button" [checked]="nbfilm()">Nb films</button>
